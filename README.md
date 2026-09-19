@@ -11,7 +11,15 @@
 
 ## 运行方法
 
-前置条件：已安装 Flutter SDK，且 `flutter doctor` 全绿（见 `docs/环境搭建记录.md`）。
+前置条件：已安装 Flutter SDK，且 `flutter doctor` 基本全绿。本机实测环境：
+
+| 项 | 版本 / 状态 |
+| --- | --- |
+| 操作系统 | Windows 11（25H2, 2009） |
+| Flutter | 3.47.5 · channel stable（Framework revision `6a19cca564`） |
+| Dart | 3.13.4（随 Flutter 内置） |
+| DevTools | 2.60.0 |
+| 运行目标 | Chrome 142（Web 端必达）、Android 模拟器（必达之一，需先装 Android Studio） |
 
 ```bash
 # 1. 克隆仓库
@@ -36,14 +44,16 @@ flutter doctor
 
 ## 目录结构
 
+本仓库根目录即工程目录（`flutter create hello_world` 生成，`docs/` 为后加）。
+
 | 路径 | 作用 |
 | --- | --- |
-| `lib/main.dart` | **应用入口**，含 `runApp(const MyApp())`；本课重点精读文件 |
+| `lib/main.dart` | **应用入口**，含 `runApp(const MyApp())`；本课重点精读文件（已加逐行中文注释） |
 | `pubspec.yaml` | 依赖与资源声明 |
 | `android/` `ios/` | 各平台原生工程 |
-| `web/` `windows/` | Web 与 Windows 平台工程 |
+| `web/` `windows/` `linux/` `macos/` | Web / Windows / Linux / macOS 平台工程 |
 | `test/` | 测试代码 |
-| `docs/` | 运行截图与记录（多端运行检查点的留证目录） |
+| `docs/` | 运行截图（多端运行检查点的留证目录）与 `main.dart` 注释版留档 |
 
 ## 运行截图
 
@@ -52,7 +62,8 @@ flutter doctor
 | 截图 | 文件 | 说明 |
 | --- | --- | --- |
 | Web 端运行 | `docs/web.png` | ⬜ 待补：`flutter run -d chrome` 后浏览器中的计数器页面 |
-| Android 模拟器运行 | `docs/emulator.png` | ⬜ 待补：模拟器中的计数器页面 |
+| Android 模拟器运行 | `docs/emulator.png` | ⬜ 待补：模拟器中的计数器页面（需先装 Android Studio 并创建 AVD） |
+| flutter doctor | `docs/doctor.png` | ✅ 已有：本机 `flutter doctor` 实测输出（Android toolchain 与 Visual Studio 两项待修） |
 
 ## 三次提交对应关系
 
