@@ -61,7 +61,7 @@ flutter doctor
 
 | 截图 | 文件 | 说明 |
 | --- | --- | --- |
-| Web 端运行 | `docs/web.png` | ⬜ 待补：`flutter run -d chrome` 后浏览器中的计数器页面 |
+| Web 端运行 | `docs/web.png` | ✅ 已有：`flutter run -d chrome` 后在浏览器中的计数器页面（`localhost:56022`） |
 | Android 模拟器运行 | `docs/emulator.png` | ⬜ 待补：模拟器中的计数器页面（需先装 Android Studio 并创建 AVD） |
 | flutter doctor | `docs/doctor.png` | ✅ 已有：本机 `flutter doctor` 实测输出（Android toolchain 与 Visual Studio 两项待修） |
 
